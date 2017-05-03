@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Select</title>
+
+</head>
+
+<body>
+
+	<div style="width:100px;margin:300px auto;">
+		<form method = "POST" action = "/template/" onsubmit="location.href = this.action + this.sap.value;return false">
+			{% csrf_token %}
+			<label for"sap">Enter SAP ID</label>
+			<input type="text" id="sap" name="sap">
+			<button type="submit"> Submit </button>
+
+
+		</form>
+
+	</div>
+
+
+</body>
+
+</hmtl>
+

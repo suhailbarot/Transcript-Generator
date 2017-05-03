@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+
+</head>
+
+<body>
+
+	<div style="width:50%;margin:300px auto;">
+		<form method="post" id="loginform">
+
+
+    {% csrf_token %}
+
+    {{ form }}
+
+    <input type="submit" class="btn btn-success" id="signinbutton" value="Sign In">
+
+    </form>
+
+	</div>
+
+
+</body>
+
+</hmtl>
